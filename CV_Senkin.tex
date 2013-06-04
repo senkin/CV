@@ -13,6 +13,7 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[T1]{fontenc}
 
 % adjust the page margins
 \usepackage[scale=0.81]{geometry}
@@ -40,13 +41,13 @@
 \begin{document}
 \maketitle
 
-\section{\textsc{Personal Info}}
+\section{\textup{Personal Info}}
 \cvdoubleitem{Full Name}{Sergey Senkin}{Citizenship}{Russian Federation}
 %\cvitem{Date of Birth}{January 5, 1988}
 \cvdoubleitem{Date of Birth}{January 5, 1988}{Marital Status}{Single}
 %\cvitem{Marital Status}{Single}
 
-\section{\textsc{Contacts}}
+\section{\textup{Contacts}}
 %\cvitem{Present Address}{CERN, Building 40, 1-B12, CH-1211, Genève 23, Switzerland}
 \cvitem{Present Address}{HH Wills Physics Laboratory, University of Bristol, Tyndall Avenue, Bristol BS8 1TL, UK}
 \cvitem{Mobile Phone}{+44 (0) 7796 223597 (UK), +41 79 289 8398 (swiss)}
@@ -56,12 +57,12 @@
 %\cvitem{Email}{sergey.senkin@bristol.ac.uk}
 \cvitem{Homepage}{\httplink[http://cern.ch/senkin/]{cern.ch/senkin/}}
 
-\section{\textsc{Education}}
+\section{\textup{Education}}
 \cventry{2010~--~present}{PhD in Particle Physics}{University of Bristol (expected in late 2013)}{}{}{}
 \cventry{2004~--~2010}{MSc/BSc in Applied Physics/Math}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
 %\cventry{2004--2008}{BSc in Applied Physics and Math}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
 
-\section{\textsc{Experience}}
+\section{\textup{Experience}}
 \subsection{Research}
 \cventry{Autumn 2010~-- present}{PhD Student}{University of Bristol, Particle Physics Group}{Bristol, UK}{}{Top quark mass and $t\bar{t}$+X cross section measurement at CMS in lepton+jets channel}
 \cventry{Autumn 2009~-- Summer 2010}{Research Assistant}{Joint Institute for Nuclear Research, CMS group}{Dubna, Russia}{}{CMS muon High-Level Trigger efficiency studies}
@@ -77,24 +78,32 @@
 
 \\ \\ \\
 
-\section{\textsc{Languages}}
+\section{\textup{Languages}}
 \cvlanguage{English}{Fluent}{TOEFL iBT score: 111 out of 120 (November 2009)}
 \cvlanguage{Russian}{Native}{}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
-\section{\textsc{Computer Skills}}
-\cvcomputer{OS}{Linux/Unix, Mac OS X}{programming}{C/C++, python}
-\cvcomputer{scientific}{CMSSW, Geant4, Mad-X, ROOT, Mathematica}{typography}{\LaTeX, OpenOffice}
-\cvcomputer{}{}{job-related}{GRID}  
+\section{\textup{Computer Skills}}
+\cvcomputer{\textit{OS}}{Linux/Unix, Mac OS X}{\textit{programming}}{C/C++, python}
+\cvcomputer{\textit{scientific}}{CMSSW, Geant4, Mathematica}{\textit{revision control}}{Git, SVN, CVS}
+\cvcomputer{\textit{IDE}}{Eclipse}{\textit{typography}}{\LaTeX, OpenOffice}
+\cvcomputer{}{}{\textit{other skills}}{GRID, ROOT, PyRoot, rootpy}
 
-\section{\textsc{Publications}}
+\section{\textup{Conference and Workshop Presentations}}
+\cvitem{9 Apr 2013}{\href{http://indico.cern.ch/getFile.py/access?contribId=78\&sessionId=10\&resId=0\&materialId=slides\&confId=214998}{Measurement of MET, HT and other global distributions in top pair events}, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=214998}{IoP Conference}, Liverpool, UK}
+\cvitem{8 Jan 2013}{\href{https://indico.cern.ch/contributionDisplay.py?contribId=45\&sessionId=6\&confId=203481}{Measurement of MET, HT and other global distributions in top pair events}, \newline CMS UK Collaboration meeting, Aberdeen, UK}
+\cvitem{14 Jun 2012}{Validation study of Particle Flow Jet Energy Corrections for top paths, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=189944}{Trigger Studies Group meeting}, CERN}
+\cvitem{15 May 2012}{Jets at High Level Trigger for top physics, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=190564}{Top Quark PAG meeting}, CERN}
+\cvitem{12 Dec 2011}{Using HitFit kinematic fitter in lepton+jets top mass analyses, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=162083}{Workshop on kinematic fitting}, CERN}
+
+\section{\textup{Publications}}
 \cvitem{2013}{\href{https://cdsweb.cern.ch/record/1478671}{\textit{Measurement of missing transverse energy in top pair events}}}{, CMS Collaboration\newline}{\href{https://cdsweb.cern.ch/record/1478671}{CMS-PAS-TOP-12-019}, paper in preparation}
 \cvitem{April 2010}{\href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{\textit{LHC discovery potential of the lightest NMSSM Higgs in $h_1 \to a_1 a_1 \to 4\mu$ channel}}}{, with Alexander Belyaev, Jim Pivarski, Alexei Safonov and Aysen Tatarinov\newline}{\href{http://arxiv.org/abs/1002.1956}{arXiv:1002.1956}, \href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{DOI:10.1103/PhysRevD.81.075021}, Phys. Rev. D}
 %\cvitem{September 2008}{\href{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4741408}{\textit{Situational Analysis with Analytical Support in Virtual Environment for Decision Making Process Under High-Risk and Crisis Conditions}}}{, with Yu.Baturin, E.Dzyabura, P.Izhutov, S.Klimenko, A.Ksenofontov, I.Purtov and A.Verzun\newline}{Cyberworlds 2008 International Conference, 10.1109/CW.2008.147, pages 837-842}
 
-\section{\textsc{Additional Publications}}
+\section{\textup{Additional Publications}}
 \cvitem{March 2013}{\href{http://arxiv.org/abs/1303.0763}{\textit{Search for the standard model Higgs boson produced in association with a top-quark pair in pp collisions at the LHC}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1303.0763}{arXiv:1303.0763}, submitted to JHEP}
 \cvitem{March 2013}{\href{http://arxiv.org/abs/1212.6682}{\textit{Measurement of the t t-bar production cross section in pp collisions at with lepton + jets final states}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1212.6682}{arXiv:1212.6682}, \href{http://www.sciencedirect.com/science/article/pii/S0370269313001500}{DOI:10.1016/j.physletb.2013.02.021}, Physics Letters B}
 \cvitem{March 2013}{\href{http://arxiv.org/abs/1211.2220}{\textit{Measurement of differential top-quark pair production cross sections in pp collisions at sqrt(s) = 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1211.2220}{arXiv:1211.2220}, \href{http://link.springer.com/article/10.1140\%2Fepjc\%2Fs10052-013-2339-4}{DOI:10.1140/epjc/s10052-013-2339-4}, European Physical Journal C}
@@ -108,28 +117,30 @@
 
 % \cvitem{March 2013}{\href{http://arxiv.org/abs/}{\textit{}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/}{arXiv:}, \href{}{}, }
 
-\section{\textsc{Honours and Awards}}
+\section{\textup{Outreach}}
+\cvitem{March 2013}{\href{http://www.bris.ac.uk/physics/news/2013/193.html}{Particle Physics Masterclass}, Bristol}
+\cvitem{January 2012}{CERN tour for Bedales School students, CERN}
+\cvitem{March 2011}{\href{http://www.bris.ac.uk/changingperspectives/}{Changing Perspectives festival}, Bristol}
+\cvitem{April 2011}{Particle Physics Masterclass, Bristol}
+
+\section{\textup{Honours and Awards}}
 \cvitem{2010}{University of Bristol Postgraduate Research Scholarship}
 \cvitem{2008}{TAMU Department of Physics Fellowship}
-\cvitem{2004}{Y.A.Gagarin award laureate in the nomination of ''Study and scientific research''}
+\cvitem{2004}{Yuri Gagarin award in ''Study and scientific research'' nomination}
+\cvitem{}{\textit{Russian National Physics and Mathematics Olympiads (region round):}}
+\cvitem{2004}{1st diploma in physics and mathematics}
+\cvitem{2003}{2nd diploma in physics, 3rd in mathematics}
 
-\cvitem{}{\textit{All-Russian Physics and Mathematics Olympiads (regional level):}}
-\cvitem{2004}{1st Diploma in Physics and Mathematics}
-\cvitem{2003}{2nd Diploma in Physics and 3rd in Mathematics}
+\section{\textup{Scientific Interests}}
+\cvlistitem[\Neutral]{Particle physics, detector physics, search for new phenomena}
+\cvlistitem[\Neutral]{Computer science, IT}
 
-\section{\textsc{Scientific Interests}}
-\cvlistitem[\Neutral]{Top physics, search for new phenomena}
-\cvlistitem[\Neutral]{Applied physics and mathematics}
-\cvlistitem[\Neutral]{Computer science}
+\section{\textup{Other Interests}}
+\cvlistitem[\Neutral]{Playing musical instruments (guitar/piano)}
+\cvlistitem[\Neutral]{Alpine skiing, mountain biking, travelling}
 
-\section{\textsc{Other Interests}}
-\cvlistitem[\Neutral]{Guitar/piano, singing}
-\cvlistitem[\Neutral]{Travelling, alpine skiing, mountain biking, climbing}
-
-\section{\textsc{Last Updated}}
-\cvitem{}{\today}
-\cvitem{}{\httplink[http://cern.ch/senkin/cv/]{cern.ch/senkin/cv/CV_Senkin.pdf}}
-
+\section{\textup{Last Updated}}
+\cvitem{}{\today, \httplink[http://cern.ch/senkin/cv/]{cern.ch/senkin/cv/CV_Senkin.pdf}}
 
 \end{document}
 
