@@ -1,0 +1,118 @@
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Sergey}
+\familyname{Senkin}
+\title{curriculum vitae}               % optional, remove the line if not wanted
+\address{}{CERN, B40-1-B12, CH-1211, Genève 23, Switzerland}    % optional, remove the line if not wanted
+\mobile{+41 79 289 8398 (swiss), +44 (0) 7796 223597 (UK)}                    % optional, remove the line if not wanted
+\phone{+41 2276 71641}                      % optional, remove the line if not wanted
+\email{sergey.senkin@cern.ch}                      % optional, remove the line if not wanted
+\extrainfo{skype: s.senkin} % optional, remove the line if not wanted
+%\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{\textsc{Personal Info}}
+\cvdoubleitem{Full Name}{Sergey Senkin}{Citizenship}{Russian Federation}
+%\cvitem{Date of Birth}{January 5, 1988}
+\cvdoubleitem{Date of Birth}{January 5, 1988}{Marital Status}{Single}
+%\cvitem{Marital Status}{Single}
+
+\section{\textsc{Contacts}}
+\cvitem{Present Address}{CERN, Building 40, 1-B12, CH-1211, Genève 23, Switzerland}
+\cvitem{Mobile Phone}{+41 79 289 8398 (swiss), +44 (0) 7796 223597 (UK)}
+\cvitem{Office Phone}{+41 2276 71641 (CERN)}
+\cvitem{Email}{sergey.senkin@cern.ch}
+\cvitem{Homepage}{\httplink[http://cern.ch/senkin/]{cern.ch/senkin/}}
+
+\section{\textsc{Education}}
+\cventry{2010--present}{PhD in Particle Physics}{University of Bristol (currently pursuing)}{}{}{}
+\cventry{2004--2010}{MSc/BSc in Applied Physics/Math}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
+%\cventry{2004--2008}{BSc in Applied Physics and Math}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
+
+\section{\textsc{Experience}}
+\subsection{Research}
+\cventry{Fall 2010-- present}{PhD Student}{University of Bristol, Particle Physics Group}{Bristol, UK}{}{Top quark mass measurement at CMS in lepton+jets channel, $t\bar{t}$+MET signature studies}
+\cventry{Fall 2009-- Summer 2010}{Research Assistant}{Joint Institute for Nuclear Research, CMS group}{Dubna, Russia}{}{CMS muon High-Level Trigger efficiency studies}
+\cventry{Fall 2008-- Spring 2009}{Research Assistant}{Texas A\&M University, Department of Physics and Astronomy}{}{}{Search for the lightest NMSSM Higgs boson ($h_1 \to a_1 a_1 \to 4\mu$)}
+\cventry{Summer 2007}{Intern Student}{Fermi National Accelerator Laboratory}{Batavia, IL, USA}{}{Tevatron TBT data fitting using MAD-X}
+\subsection{Vocational}
+\cventry{Summer 2011-- present}{Trigger Developer/Shifter}{CERN, LHC, CMS detector}{Point 5, Cessy, France}{}{Top Trigger developer; ECAL Endcaps High-Voltage System on-call expert}
+\cventry{November 2008}{CSC Shifter}{CERN, LHC, CMS detector}{Point 5, Cessy, France}{}{Cathode Strip Chambers subsystem maintenance}
+\subsection{Teaching}
+\cventry{Spring 2011}{Tutor}{University of Bristol, School of Physics}{}{}{Tutorials in Maths and Particle Physics for L1 and L3 students}
+\cventry{Spring 2009}{Teaching Assistant}{Texas A\&M University, Department of Physics and Astronomy}{}{}{Tutorials and labs for freshman General Physics course}
+\cventry{March 2005}{Physics Grader}{National Physics Olympiad for high school students}{}{}{}
+
+\\ \\ \\
+
+\section{\textsc{Languages}}
+\cvlanguage{English}{Fluent}{TOEFL iBT score: 111 out of 120 (November 2009)}
+\cvlanguage{Russian}{Native}{}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{\textsc{Recent Publications}}
+\cvitem{April 2012}{\href{http://arxiv.org/abs/1204.2807}{\textit{Measurement of the mass difference between top and antitop quarks}}}{,\newline with CMS Collaboration\newline}{\href{http://arxiv.org/abs/1204.2807}{arXiv:1204.2807}, submitted to JHEP}
+\cvitem{April 2010}{\href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{\textit{LHC discovery potential of the lightest NMSSM Higgs in $h_1 \to a_1 a_1 \to 4\mu$ channel}}}{, with Alexander Belyaev, Jim Pivarski, Alexei Safonov and Aysen Tatarinov\newline}{\href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{Phys. Rev. D 81, 075021 (2010)~}}
+%\cvitem{September 2008}{\href{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4741408}{\textit{Situational Analysis with Analytical Support in Virtual Environment for Decision Making Process Under High-Risk and Crisis Conditions}}}{, with Yu.Baturin, E.Dzyabura, P.Izhutov, S.Klimenko, A.Ksenofontov, I.Purtov and A.Verzun\newline}{Cyberworlds 2008 International Conference, 10.1109/CW.2008.147, pages 837-842}
+
+\section{\textsc{Computer Skills}}
+\cvcomputer{OS}{Linux/Unix, Mac OS X}{programming}{C/C++, python}
+\cvcomputer{scientific}{CMSSW, Geant4, Mad-X, ROOT, Mathematica}{typography}{\LaTeX, OpenOffice}
+\cvcomputer{}{}{job-related}{GRID}  
+
+\section{\textsc{Honours and Awards}}
+\cvitem{2010}{University of Bristol Postgraduate Research Scholarship}
+\cvitem{2008}{TAMU Department of Physics Fellowship}
+\cvitem{2004}{Y.A.Gagarin award laureate in the nomination of ''Study and scientific research''}
+\cvitem{}{Repeated winner of All-Russian Physics and Mathematics Olympiads (3rd level):}
+\cvitem{2004}{1st Diploma in Physics and Mathematics}
+\cvitem{2003}{2nd Diploma in Physics and 3rd in Mathematics}
+
+\section{\textsc{Scientific Interests}}
+\cvlistitem[\Neutral]{Top physics, search for new phenomena}
+\cvlistitem[\Neutral]{Applied physics and mathematics}
+\cvlistitem[\Neutral]{Computer science}
+
+\section{\textsc{Other Interests}}
+\cvlistitem[\Neutral]{Guitar/piano, singing}
+\cvlistitem[\Neutral]{Travelling, alpine skiing, mountain biking, climbing}
+
+\section{\textsc{Last Updated}}
+\cvitem{}{\today}
+\cvitem{}{\httplink[http://cern.ch/senkin/cv/]{cern.ch/senkin/cv/CV_Senkin.pdf}}
+
+
+\end{document}
+
+
+%% end of file `CV_Senkin.tex'.
