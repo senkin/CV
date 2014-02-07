@@ -12,7 +12,7 @@
 
 % Define \cvdoublecolumn, which sets its arguments in two columns without any labels
 \newcommand{\cvdoublecolumn}[2]{%
-  \cvline[0.75em]{}{%
+  \cvline{}{%
     \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
     \hfill%
     \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
@@ -48,7 +48,7 @@
 % personal data
 \firstname{Sergey}
 \familyname{Senkin}
-\title{curriculum vitae}
+%\title{curriculum vitae}
 %\address{}{CERN, B40-1-B12, CH-1211, Genève 23, Switzerland}
 %\address{}{HH Wills Physics Laboratory, University of Bristol, Tyndall Avenue, Bristol BS8 1TL, UK}
 %\mobile{+44 (0) 7796 223597 (UK), +41 79 289 8398 (swiss)}
@@ -66,14 +66,16 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-
+\vspace*{-10mm}
+\setlength{\hintscolumnwidth}{2.5cm}
+\recomputelengths
 \section{\textup{Personal Info}}
 \cvdoubleitem{Full Name}{Sergey Senkin}{}{}%{Citizenship}{Russian Federation}
 \cvdoubleitem{Date of Birth}{January 5, 1988}{}{}%{Marital Status}{Single}
 
 \section{\textup{Contact Details}}
 %\cvitem{Present Address}{CERN, Building 40, 1-B12, CH-1211, Genève 23, Switzerland}
-\cvitem{Present Address}{HH Wills Physics Laboratory, University of Bristol, Tyndall Avenue, Bristol BS8 1TL, UK}
+\cvitem{Address}{HH Wills Physics Laboratory, University of Bristol, Tyndall Ave, Bristol BS8 1TL, UK}
 %\cvitem{Present Address}{54 St Michael's Hill, Bristol BS2 8DX, UK}
 \cvitem{Mobile Phone}{+44 (0) 7796 223597 (UK), +41 79 289 8398 (swiss)}
 %\cvitem{Office Phone}{+41 2276 71641 (CERN)}
@@ -83,18 +85,18 @@
 \cvitem{Homepage}{\httplink[http://cern.ch/senkin/]{cern.ch/senkin/}}
 
 \section{\textup{Education}}
-\cventry{2010~--~present}{PhD in Particle Physics}{University of Bristol (expected in March 2014)}{}{}{}
-\cventry{2008~--~2010}{MSc in Applied Physics and Maths}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
-\cventry{2004~--~2008}{BSc in Applied Physics and Maths}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
+\cventry{2010--present}{PhD in Particle Physics}{University of Bristol (expected in March 2014)}{}{}{}
+\cventry{2008--2010}{MSc in Applied Physics and Maths}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
+\cventry{2004--2008}{BSc in Applied Physics and Maths}{Moscow Institute of Physics and Technology}{}{}{}  % arguments 3 to 6 are optional
 
 \section{\textup{Experience}}
 \subsection{Research}
-\cventry{Autumn 2010~-- present}{PhD Student}{University of Bristol, Particle Physics Group}{Bristol, UK}{}{Top quark mass and $\textrm{t}\bar{\textrm{t}}$+X cross section measurement at CMS in lepton+jets channel}
-\cventry{Autumn 2009~-- Summer 2010}{Research Assistant}{Joint Institute for Nuclear Research, CMS group}{Dubna, Russia}{}{CMS muon High-Level Trigger efficiency studies}
-\cventry{Autumn 2008~-- Spring 2009}{Research Assistant}{Texas A\&M University, Department of Physics and Astronomy}{}{}{Search for the lightest NMSSM Higgs boson ($h_1 \to a_1 a_1 \to 4\mu$)}
-\cventry{Summer 2007}{Intern Student}{Fermi National Accelerator Laboratory}{Batavia, IL, USA}{}{Tevatron turn-by-turn data fitting using MAD-X}
+\cventry{Autumn 2010-- present}{PhD Student}{University of Bristol, Particle Physics Group}{Bristol, UK}{}{Top quark mass and $\textrm{t}\bar{\textrm{t}}$+X cross section measurement at CMS in lepton+jets channel}
+\cventry{Autumn 2009-- Summer 2010}{Research Assistant}{Joint Institute for Nuclear Research, CMS group}{Dubna, Russia}{}{CMS muon High-Level Trigger efficiency studies}
+\cventry{Autumn 2008-- Spring 2009}{Research Assistant}{Texas A\&M University, Department of Physics and Astronomy}{}{}{Search for the lightest NMSSM Higgs boson ($h_1 \to a_1 a_1 \to 4\mu$)}
+\cventry{Summer 2007}{Intern Student}{Fermi National Accelerator Laboratory}{Batavia, IL, USA}{}{Tevatron turn-by-turn optics fit using MAD-X}
 \subsection{Service work}
-\cventry{Summer 2011~-- Autumn 2012}{Trigger Developer/Shifter}{CERN, LHC, CMS detector}{Point 5, Cessy, France}{}{Top Trigger developer; ECAL Endcaps High-Voltage System on-call expert}
+\cventry{Summer 2011-- Autumn 2012}{Trigger Developer/Shifter}{CERN, LHC, CMS detector}{Point 5, Cessy, France}{}{Top Trigger developer; ECAL Endcaps High-Voltage System on-call expert}
 \cventry{November 2008}{CSC Shifter}{CERN, LHC, CMS detector}{Point 5, Cessy, France}{}{Cathode Strip Chambers subsystem maintenance}
 \subsection{Teaching}
 \cventry{Spring 2011, Spring 2013}{Tutor}{University of Bristol, School of Physics}{}{}{Tutorials in Maths and Particle Physics for L1 and L3 students}
@@ -104,7 +106,7 @@
 \cvitem{August 2012}{\href{http://users.phys.psu.edu/~cteq/schools/summer12/}{CTEQ-Fermilab Summer School on QCD and Electroweak
 Phenomenology,}}
 \cvitem{}{Pontificia Universidad Cat\'olica del Per\'u, Lima, Peru}
-\\ \\ \\
+
 
 \section{\textup{Languages}}
 \cvlanguage{English}{Fluent}{TOEFL iBT score: 111 out of 120 (November 2009)}
@@ -115,7 +117,7 @@ Phenomenology,}}
 
 \section{\textup{Computer Skills}}
 \cvcomputer{\textit{OS}}{Linux/Unix, Mac OS X}{\textit{programming}}{C/C++, python}
-\cvcomputer{\textit{scientific}}{CMSSW, Geant4, Mathematica}{\textit{revision control}}{\href{https://github.com/senkin}{\textit{Git}}, SVN, CVS}
+\cvcomputer{\textit{scientific}}{CMSSW, Geant4, Mathematica}{\textit{revision~control}}{\href{https://github.com/senkin}{\textit{Git}}, SVN, CVS}
 \cvcomputer{\textit{IDE}}{Eclipse}{\textit{typography}}{\LaTeX, OpenOffice}
 \cvcomputer{}{}{\textit{other skills}}{GRID, ROOT, rootpy, matplotlib}
 
@@ -124,7 +126,7 @@ Phenomenology,}}
 \cvitem{9 Apr 2013}{\href{https://indico.cern.ch/contributionDisplay.py?contribId=78\&sessionId=10\&confId=214998}{\textit{Measurement of MET, HT and other global distributions in top pair events}}, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=214998}{IoP Conference}, Liverpool, UK}
 \cvitem{8 Jan 2013}{\href{https://indico.cern.ch/contributionDisplay.py?contribId=45\&sessionId=6\&confId=203481}{\textit{Measurement of MET, HT and other global distributions in top pair events}}, \newline CMS UK Collaboration meeting, Abingdon, UK}
 \cvitem{14 Jun 2012}{\textit{Validation study of Particle Flow Jet Energy Corrections for top paths}, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=189944}{Trigger Studies Group meeting}, CERN}
-\cvitem{15 May 2012}{\textit{Jets at High Level Trigger for top physics}, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=190564}{Top Quark PAG meeting}, CERN}
+\cvitem{15 May 2012}{\textit{Jets at High-Level Trigger for Top Physics}, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=190564}{Top Quark PAG meeting}, CERN}
 \cvitem{12 Dec 2011}{\textit{Using HitFit kinematic fitter in lepton+jets top mass analyses}, \newline \href{https://indico.cern.ch/conferenceDisplay.py?confId=162083}{Workshop on kinematic fitting}, CERN}
 
 %\section{\textup{Outreach}}
@@ -141,80 +143,87 @@ Phenomenology,}}
 \section{\textup{Honours and Awards}}
 \cvitem{2010}{University of Bristol Postgraduate Research Scholarship}
 \cvitem{2008}{TAMU Department of Physics Fellowship}
-\cvitem{2004}{Yuri Gagarin award in ''Study and scientific research'' nomination}
+\cvitem{2004}{Yuri Gagarin award in ``Study and scientific research'' nomination}
 \vspace{2 mm}
 \cvitem{}{\textit{Russian National Physics and Mathematics Olympiads (region round):}}
 \cvitem{2004}{1st diploma in physics and mathematics}
 \cvitem{2003}{2nd diploma in physics, 3rd in mathematics}
 
+\renewcommand{\listitemsymbol}{\labelitemi~}
+
 \section{\textup{Scientific Interests}}
-\cvlistitem[\Neutral]{Particle physics, detector physics, search for new phenomena}
-\cvlistitem[\Neutral]{Computer science, IT}
+\cvlistitem{Particle physics, detector physics, search for new phenomena}
+\cvlistitem{Computer science, IT}
 
 \section{\textup{Other Interests}}
-\cvlistitem[\Neutral]{Alpine skiing, mountain biking, surfing, travelling}
-\cvlistitem[\Neutral]{Playing musical instruments (guitar/piano)}
+\cvlistitem{Alpine skiing, mountain biking, surfing, travelling}
+\cvlistitem{Playing musical instruments (guitar/piano)}
 
-\vspace{5 mm} %newpage
+\vspace{20 mm} %newpage
 
-\section{\textup{Publications}}
-\cvitem{2013}{\href{https://cdsweb.cern.ch/record/1599734}{\textit{Measurement of missing transverse energy and other event-level observables in top pair events at $\sqrt s$ = 8 TeV}}}{, CMS Collaboration\newline}{\href{https://cdsweb.cern.ch/record/1599734}{CMS-PAS-TOP-12-042}, paper in preparation}
-%\cvitem{2013}{\href{https://cdsweb.cern.ch/record/1478671}{\textit{Measurement of missing transverse energy in top pair events at $\sqrt s$ = 7 TeV}}}{, CMS Collaboration\newline}{\href{https://cdsweb.cern.ch/record/1478671}{CMS-PAS-TOP-12-019}, paper in preparation}
-\cvitem{December 2012}{\href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{\textit{Measurement of the top-quark mass in $t\bar{t}$ events with lepton+jets final states in pp collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1209.2319}{arXiv:1209.2319}, \href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{DOI:10.1007/JHEP12(2012)105}, JHEP}
-\cvitem{April 2010}{\href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{\textit{LHC discovery potential of the lightest NMSSM Higgs in $h_1 \to a_1 a_1 \to 4\mu$ channel}}}{, with Alexander Belyaev, Jim Pivarski, Alexei Safonov and Aysen Tatarinov\newline}{\href{http://arxiv.org/abs/1002.1956}{arXiv:1002.1956}, \href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{DOI:10.1103/PhysRevD.81.075021}, Phys. Rev. D}
-%\cvitem{September 2008}{\href{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4741408}{\textit{Situational Analysis with Analytical Support in Virtual Environment for Decision Making Process Under High-Risk and Crisis Conditions}}}{, with Yu.Baturin, E.Dzyabura, P.Izhutov, S.Klimenko, A.Ksenofontov, I.Purtov and A.Verzun\newline}{Cyberworlds 2008 International Conference, 10.1109/CW.2008.147, pages 837-842}
+% \section{\textup{Publications}}
+% \cvlistitem{Total number of publications with the CMS collaboration: 260}
+% \cvlistitem{INSPIRE HEP profile:
+% \emph{\href{http://inspirehep.net/author/profile/S.Senkin.1}{http://inspirehep.net/author/profile/S.Senkin.1}}}
 
-\section{\textup{Additional Publications}}
-\cvitem{March 2013}{\href{http://arxiv.org/abs/1303.0763}{\textit{Search for the standard model Higgs boson produced in association with a top-quark pair in pp collisions at the LHC}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1303.0763}{arXiv:1303.0763}, submitted to JHEP}
-\cvitem{March 2013}{\href{http://arxiv.org/abs/1212.6682}{\textit{Measurement of the $t\bar{t}$ production cross section in pp collisions at $\sqrt s$~= 7 TeV with lepton+jets final states}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1212.6682}{arXiv:1212.6682}, \href{http://www.sciencedirect.com/science/article/pii/S0370269313001500}{DOI:10.1016/j.physletb.2013.02.021}, Physics Letters B}
-\cvitem{March 2013}{\href{http://arxiv.org/abs/1211.2220}{\textit{Measurement of differential top-quark pair production cross sections in pp collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1211.2220}{arXiv:1211.2220}, \href{http://link.springer.com/article/10.1140\%2Fepjc\%2Fs10052-013-2339-4}{DOI:10.1140/epjc/s10052-013-2339-4}, European Physical Journal C}
-\cvitem{January 2013}{\href{http://arxiv.org/abs/1210.7471}{\textit{Search for heavy quarks decaying into a top quark and a W or Z boson using lepton + jets events in pp collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1210.7471}{arXiv:1210.7471}, \href{http://link.springer.com/article/10.1007\%2FJHEP01\%282013\%29154}{DOI:10.1007/JHEP01(2013)154}, JHEP}
-\cvitem{December 2012}{\href{http://arxiv.org/abs/1209.2319}{\textit{Measurement of the top-quark mass in $t\bar{t}$ events with lepton+jets final states in pp collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1209.2319}{arXiv:1209.2319}, \href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{DOI:10.1007/JHEP12(2012)105}, JHEP}
-\cvitem{December 2012}{\href{http://arxiv.org/abs/1209.0471}{\textit{Search for pair produced fourth-generation up-type quarks in pp collisions at $\sqrt s$~= 7 TeV with a lepton in the final state}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1209.0471}{arXiv:1209.0471}, \href{http://www.sciencedirect.com/science/article/pii/S0370269312010921}{DOI:10.1016/j.physletb.2012.10.038}, Physics Letters B}
-\cvitem{October 2012}{\href{http://arxiv.org/abs/1207.0065}{\textit{Inclusive and differential measurements of the $t\bar{t}$ charge asymmetry in proton-proton collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1207.0065}{arXiv:1207.0065}, \href{http://www.sciencedirect.com/science/article/pii/S0370269312009756}{DOI:10.1016/j.physletb.2012.09.028}, Physics Letters B}
-\cvitem{October 2012}{\href{http://arxiv.org/abs/1206.3921}{\textit{Search for charge-asymmetric production of W' bosons in top pair + jet events from pp collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1206.3921}{arXiv:1206.3921}, \href{http://www.sciencedirect.com/science/article/pii/S0370269312009951}{DOI:10.1016/j.physletb.2012.09.048}, Physics Letters B}
-\cvitem{March 2012}{\href{http://arxiv.org/abs/1112.5100}{\textit{Measurement of the charge asymmetry in top-quark pair production in proton-proton collisions at $\sqrt s$~= 7 TeV}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1112.5100}{arXiv:1112.5100}, \href{http://www.sciencedirect.com/science/article/pii/S0370269312001190}{DOI:10.1016/j.physletb.2012.01.078}, Physics Letters B}
-\cvitem{June 2012}{\href{http://arxiv.org/abs/1204.2807}{\textit{Measurement of the mass difference between top and antitop quarks}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/1204.2807}{arXiv:1204.2807}, \href{http://link.springer.com/article/10.1007\%2FJHEP06\%282012\%29109}{DOI:10.1007/JHEP06(2012)109}, JHEP}
+\section{\textup{Publications with significant contribution}}
 
-% \cvitem{March 2013}{\href{http://arxiv.org/abs/}{\textit{}}}{, CMS Collaboration\newline}{\href{http://arxiv.org/abs/}{arXiv:}, \href{}{}, }
+\cvitem{2013}{CMS Collaboration, \href{https://cdsweb.cern.ch/record/1599734}{``Measurement of missing transverse energy and other event-level observables in top pair events at $\sqrt s$ = 8 TeV''}, \textit{\href{https://cdsweb.cern.ch/record/1599734}{CMS-PAS-TOP-12-042}, paper in preparation}}
+\cvitem{2013}{CMS Collaboration, \href{https://cdsweb.cern.ch/record/1478671}{``Measurement of missing transverse energy in top pair events at $\sqrt s$ = 7 TeV''}, \textit{\href{https://cdsweb.cern.ch/record/1478671}{CMS-PAS-TOP-12-019}, paper in preparation}}
+\cvitem{2012}{CMS Collaboration, \href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{``Measurement of the top-quark mass in $t\bar{t}$ events with lepton+jets final states in pp collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{DOI:10.1007/JHEP12(2012)105}, JHEP}}
+\cvitem{2010}{Alexander Belyaev, Jim Pivarski, Alexei Safonov, Sergey Senkin, and Aysen Tatarinov, \href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{``LHC discovery potential of the lightest NMSSM Higgs in $h_1 \to a_1 a_1 \to 4\mu$ channel''}, \textit{\href{http://link.aps.org/doi/10.1103/PhysRevD.81.075021}{DOI:10.1103/PhysRevD.81.075021}, Phys. Rev. D}}
+%\cvitem{2008}{\href{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=4741408}{\textit{Situational Analysis with Analytical Support in Virtual Environment for Decision Making Process Under High-Risk and Crisis Conditions}}}{, with Yu.Baturin, E.Dzyabura, P.Izhutov, S.Klimenko, A.Ksenofontov, I.Purtov and A.Verzun\newline}{Cyberworlds 2008 International Conference, 10.1109/CW.2008.147, pages 837-842}
 
-\vspace{25 mm} %newpage
+\section{\textup{Publications with contribution via the High-Level Trigger work}}
+\cvitem{2013}{CMS Collaboration, \href{http://arxiv.org/abs/1303.0763}{``Search for the standard model Higgs boson produced in association with a top-quark pair in pp collisions at the LHC''}, \textit{\href{http://link.springer.com/article/10.1007\%2FJHEP05\%282013\%29145}{DOI:10.1007/JHEP05(2013)145}, JHEP}}
+\cvitem{2013}{CMS Collaboration, \href{http://arxiv.org/abs/1212.6682}{``Measurement of the $t\bar{t}$ production cross section in pp collisions at $\sqrt s$~= 7 TeV with lepton+jets final states''}, \textit{\href{http://www.sciencedirect.com/science/article/pii/S0370269313001500}{DOI:10.1016/j.physletb.2013.02.021}, Physics Letters B}}
+\cvitem{2013}{CMS Collaboration, \href{http://arxiv.org/abs/1211.2220}{``Measurement of differential top-quark pair production cross sections in pp collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://link.springer.com/article/10.1140\%2Fepjc\%2Fs10052-013-2339-4}{DOI:10.1140/epjc/s10052-013-2339-4}, European Physical Journal C}}
+\cvitem{2013}{CMS Collaboration, \href{http://arxiv.org/abs/1210.7471}{``Search for heavy quarks decaying into a top quark and a W or Z boson using lepton + jets events in pp collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://link.springer.com/article/10.1007\%2FJHEP01\%282013\%29154}{DOI:10.1007/JHEP01(2013)154}, JHEP}}
+\cvitem{2012}{CMS Collaboration, \href{http://arxiv.org/abs/1209.2319}{``Measurement of the top-quark mass in $t\bar{t}$ events with lepton+jets final states in pp collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{DOI:10.1007/JHEP12(2012)105}, JHEP}}
+\cvitem{2012}{CMS Collaboration, \href{http://arxiv.org/abs/1209.0471}{``Search for pair produced fourth-generation up-type quarks in pp collisions at $\sqrt s$~= 7 TeV with a lepton in the final state''}, \textit{\href{http://www.sciencedirect.com/science/article/pii/S0370269312010921}{DOI:10.1016/j.physletb.2012.10.038}, Physics Letters B}}
+\cvitem{2012}{CMS Collaboration, \href{http://arxiv.org/abs/1207.0065}{``Inclusive and differential measurements of the $t\bar{t}$ charge asymmetry in proton-proton collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://www.sciencedirect.com/science/article/pii/S0370269312009756}{DOI:10.1016/j.physletb.2012.09.028}, Physics Letters B}}
+\cvitem{2012}{CMS Collaboration, \href{http://arxiv.org/abs/1206.3921}{``Search for charge-asymmetric production of W' bosons in top pair + jet events from pp collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://www.sciencedirect.com/science/article/pii/S0370269312009951}{DOI:10.1016/j.physletb.2012.09.048}, Physics Letters B}}
+\cvitem{2012}{CMS Collaboration, \href{http://arxiv.org/abs/1112.5100}{``Measurement of the charge asymmetry in top-quark pair production in proton-proton collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://www.sciencedirect.com/science/article/pii/S0370269312001190}{DOI:10.1016/j.physletb.2012.01.078}, Physics Letters B}}
+\cvitem{2012}{CMS Collaboration, \href{http://arxiv.org/abs/1204.2807}{``Measurement of the mass difference between top and antitop quarks''}, \textit{\href{http://link.springer.com/article/10.1007\%2FJHEP06\%282012\%29109}{DOI:10.1007/JHEP06(2012)109}, JHEP}}
 
-\section{\textup{Referees}}
-\cvdoublecolumn{\cvreference{Professor Greg Heath}
-    {School of Physics}
-    {University of Bristol}
-    {H.H. Wills Physics Laboratory}
-    {Tyndall Avenue, Bristol BS8 1TL}
-    {greg.heath@bristol.ac.uk}
-    {+44 (0) 117 928 8947}%
-    }
-    {\cvreference{Dr Martijn Mulders}
-    {CERN}
-    {CH-1211}
-    {Geneva 23}
-    {Switzerland}
-    {martijn.mulders@cern.ch}
-    {+41 22 767 3635}%
-    }
 
-\cvdoublecolumn{\cvreference{Dr St\'ephanie Beauceron}
-    {CERN}
-    {CH-1211}
-    {Geneva 23}
-    {Switzerland}
-    {stephanie.beauceron@cern.ch}
-    {+41 22 76 71558}%
-    }
-    {{}
-    {}
-    {}
-    {}
-    {}
-    {}
-    }
+% \vspace{25 mm} %newpage
 
-\vspace{10 mm}
+% \section{\textup{Referees}}
+% \cvdoublecolumn{\cvreference{Professor Greg Heath}
+%     {School of Physics}
+%     {University of Bristol}
+%     {H.H. Wills Physics Laboratory}
+%     {Tyndall Avenue, Bristol BS8 1TL}
+%     {greg.heath@bristol.ac.uk}
+%     {+44 (0) 117 928 8947}%
+%     }
+%     {\cvreference{Dr Martijn Mulders}
+%     {CERN}
+%     {CH-1211}
+%     {Geneva 23}
+%     {Switzerland}
+%     {martijn.mulders@cern.ch}
+%     {+41 22 767 3635}%
+%     }
+
+% \cvdoublecolumn{\cvreference{Dr St\'ephanie Beauceron}
+%     {CERN}
+%     {CH-1211}
+%     {Geneva 23}
+%     {Switzerland}
+%     {stephanie.beauceron@cern.ch}
+%     {+41 22 76 71558}%
+%     }
+%     {{}
+%     {}
+%     {}
+%     {}
+%     {}
+%     {}
+%     }
+
+% \vspace{10 mm}
 
 \section{\textup{Last Updated}}
 \cvitem{}{\today}
