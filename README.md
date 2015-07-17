@@ -1,4 +1,4 @@
 CV
 ==
 
-Curriculum Vitae
+Sergey Senkin's Curriculum Vitae
