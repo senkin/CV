@@ -19,6 +19,9 @@
     }%
 }
 
+\newlength{\listdoubleitemmaincolumnwidth}%
+\setlength{\listdoubleitemmaincolumnwidth}{6.5cm}%
+
 % usage: \cvreference{name}{address line 1}{address line 2}{address line 3}{address line 4}{e-mail address}{phone number}
 % Everything but the name is optional
 % If \addresssymbol, \emailsymbol or \phonesymbol are specified, they will be used.
@@ -32,7 +35,7 @@
     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
 %    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
-    \ifthenelse{\equal{#6}{}}{}{Email:~#6\newline}%  
+    \ifthenelse{\equal{#6}{}}{}{Email:~#6\newline}%
 %    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
     \ifthenelse{\equal{#7}{}}{}{Tel.:~#7}}
 
@@ -95,7 +98,8 @@
 
 \section{\textup{Experience}}
 \subsection{Research}
-\cventry{Dec~2015-- present}{Postdoctoral Researcher}{LPC Clermont Ferrand, France}{}{}{$\textrm{tt}$+X Dark Matter search with the ATLAS detector at the Large Hadron Collider, CERN}
+\cventry{Mar~2018-- present}{Postdoctoral Fellow}{International Agency for Research on Cancer / WHO, Lyon, France}{}{}{Mutational signature analysis for the Mutographs project: statistical analysis of genomics data}
+\cventry{Dec~2015-- Dec~2017}{Postdoctoral Researcher}{LPC Clermont Ferrand, France}{}{}{$\textrm{tt}$+X Dark Matter search with the ATLAS detector at the Large Hadron Collider, CERN}
 \cventry{May 2014-- Nov~2014}{Postdoctoral Researcher}{University of Bristol, UK}{}{}{$\textrm{t}\bar{\textrm{t}}$+X cross section measurement at the CMS detector at the Large Hadron Collider, CERN}
 \cventry{Oct 2010-- May~2014}{PhD Student}{University of Bristol, UK; CERN}{}{}{Top quark mass and $\textrm{t}\bar{\textrm{t}}$+X cross section measurement at CMS in the lepton+jets channel}
 \cventry{Sep 2009-- Jun~2010}{Research Assistant}{Joint Institute for Nuclear Research, Dubna, Russia}{}{}{CMS dimuon High-Level Trigger efficiency studies}
@@ -104,7 +108,7 @@
 \subsection{Service work}
 \cventry{Autumn 2016-- present}{Data Quality Leader}{CERN, Geneva, Switzerland}{}{}{Tile Hadronic Calorimeter perfomance and maintenance}
 \cventry{Summer 2011-- Autumn 2012}{HLT Developer/Shifter}{CERN, Geneva, Switzerland}{}{}{Top trigger developer; ECAL Endcaps High-Voltage System on-call expert}
-\cventry{November 2008}{CSC Shifter}{CERN, LHC, CMS detector, Point 5, Cessy, France}{}{}{Cathode Strip Chambers detector subsystem maintenance}
+% \cventry{November 2008}{CSC Shifter}{CERN, LHC, CMS detector, Point 5, Cessy, France}{}{}{Cathode Strip Chambers detector subsystem maintenance}
 \subsection{Teaching}
 \cventry{Spring 2011, Spring 2013}{Tutor}{University of Bristol, School of Physics, Bristol, UK}{}{}{Tutorials in Maths and Particle Physics for L1 and L3 students}
 \cventry{Spring 2009}{Teaching Assistant}{Texas A\&M University, College Station, TX, USA}{}{}{Tutorials and labs for freshman General Physics course}
@@ -113,7 +117,7 @@
 \newpage
 
 \subsection{Editorial activities}
-\cventry{Jun 2017-- present}{Invited Editorial Board member \normalfont{for the ATLAS Collaboration publication} \newline\textit{``Operation and performance of the ATLAS Tile Calorimeter in Run 1''}}{CERN}{}{}{}
+\cventry{Jun 2017-- Mar~2018}{Invited Editorial Board member \normalfont{for the ATLAS Collaboration publication} \newline\textit{``Operation and performance of the ATLAS Tile Calorimeter in Run 1''}}{CERN}{}{}{}
 
 \subsection{Relevant training}
 \cventry{August 2012}{\href{http://users.phys.psu.edu/~cteq/schools/summer12/}{CTEQ-Fermilab Summer School on QCD and Electroweak
@@ -167,10 +171,10 @@ Phenomenology}}{Pontificia Universidad Cat\'olica del Per\'u, Lima, Peru}{}{}{}
 \renewcommand{\listitemsymbol}{\labelitemi~}
 
 \section{\textup{Scientific and other interests}}
-\cvlistitem{Data science, particle physics, search for new phenomena, IT}
+\cvlistitem{Data science, genomics data analysis, search for new phenomena, IT}
 \cvlistitem{Machine learning, AI, sustainable development, health physics, neuroscience}
 %\section{\textup{Other Interests}}
-\cvlistitem{Alpine skiing, mountain biking, scuba diving, surfing, travelling}
+\cvlistitem{Alpine skiing, mountain biking, scuba diving, climbing, surfing, travelling}
 % \cvlistitem{Playing musical instruments (guitar/piano)}
 
 %\vspace{20 mm} %newpage
@@ -181,6 +185,7 @@ Phenomenology}}{Pontificia Universidad Cat\'olica del Per\'u, Lima, Peru}{}{}{}
 \emph{\href{http://inspirehep.net/author/profile/S.Senkin.1}{http://inspirehep.net/author/profile/S.Senkin.1}}}
 
 \section{\textup{Publications with significant contribution}}
+\cvitem{2018}{ATLAS Collaboration, \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/EXOT-2016-16/}{``Search for new phenomena in events with same-charge leptons and b-jets in pp collisions at $\sqrt s$ = 13 TeV with the ATLAS detector''}, \textit{\href{https://arxiv.org/abs/1807.11883}{CERN-EP-2018-171}, submitted to JHEP}}
 \cvitem{2016}{ATLAS Collaboration, \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2016-032/}{``Search for new phenomena using events with b-jets and a pair of same-charge leptons in 3.2 fb$^{-1}$ of pp collisions at $\sqrt s$ = 13 TeV with the ATLAS detector''}, \textit{\href{http://cds.cern.ch/record/2161545}{ATLAS-CONF-2016-032}, ATLAS conference note}}
 \cvitem{2016}{CMS Collaboration, \href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.94.052006}{``Measurement of the differential cross sections for top quark pair production as a function of kinematic event variables in pp collisions at $\sqrt s$ = 7 and 8 TeV''}, \textit{\href{http://journals.aps.org/prd/abstract/10.1103/PhysRevD.94.052006}{DOI:10.1103/PhysRevD.94.052006}, Phys.~Rev.~D}}
 \cvitem{2012}{CMS Collaboration, \href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{``Measurement of the top-quark mass in $t\bar{t}$ events with lepton+jets final states in pp collisions at $\sqrt s$~= 7 TeV''}, \textit{\href{http://link.springer.com/article/10.1007\%2FJHEP12\%282012\%29105}{DOI:10.1007/JHEP12(2012)105}, JHEP}}
